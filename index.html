@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>College & Internship Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>College & Internship Tracker</h1>
+    <p>Track your applications, status, and notes</p>
+
+    <div class="form-section">
+      <input type="text" id="titleInput" placeholder="College / Internship name" />
+      
+      <select id="typeInput">
+        <option value="College">College</option>
+        <option value="Internship">Internship</option>
+      </select>
+
+      <select id="statusInput">
+        <option value="Applied">Applied</option>
+        <option value="Pending">Pending</option>
+        <option value="Interview">Interview</option>
+        <option value="Selected">Selected</option>
+        <option value="Rejected">Rejected</option>
+      </select>
+
+      <input type="text" id="noteInput" placeholder="Add notes / deadline / details" />
+
+      <button onclick="addEntry()">Add Entry</button>
+    </div>
+
+    <div class="tracker-section">
+      <h2>Your Entries</h2>
+      <ul id="entryList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
